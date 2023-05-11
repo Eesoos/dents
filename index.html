@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <title>EuroDent</title>
+    <script
+      src="https://kit.fontawesome.com/75781ea067.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="header__logo" data-scroll="#intro">EuroDent</div>
+          <nav class="nav" id="nav">
+            <a class="nav__links active" href="#" data-scroll="#about"
+              >About us</a
+            >
+            <a class="nav__links" href="#" data-scroll="#services">Service</a>
+            <a class="nav__links" href="#" data-scroll="#blog"
+              >Photo Portfolio</a
+            >
+            <a class="nav__links" href="#" data-scroll="#works">Work</a>
+            <a class="nav__links" href="#" data-scroll="#footer">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="page">
+      <div class="intro" id="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <h2 class="intro__suptitle">Creative Template</h2>
+            <h1 class="intro__title">Welcome to EuroDent</h1>
+            <a class="btn" href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section__header">
+            <h3 class="section__suptitle">What we do</h3>
+            <h2 class="section__title">Story card us</h2>
+            <div class="section__text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ratione voluptatem eligendi, recusandae exercitationem facilis
+                placeat mollitia suscipit tempora aspernatur. Placeat, eveniet.
+                Vitae, recusandae, voluptatem voluptas iusto nisi, nulla vero
+                deserunt neque reprehenderit perferendis fugiat. Explicabo
+                animi, sequi sunt dolorum officia dolores velit vitae dolore
+                amet esse nulla eveniet nostrum accusamus.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__item">
+              <div class="card__inner">
+                <div class="card__text">Super Team</div>
+                <div class="card__image card__image--first">
+                  <img src="/assets/images/pc.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__inner">
+                <div class="card__image card__image--first">
+                  <img src="/assets/images/phone.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="card__item">
+              <div class="card__inner">
+                <div class="card__image card__image--first">
+                  <img src="/assets/images/plant.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section quote">
+        <div class="container">
+          <div class="form js-form">
+            <form action="#" id="form">
+              <h1 class="form__title">Get a fast quote</h1>
+              <div class="form__flex">
+                <div class="form__item">
+                  <div class="form__item-container">
+                    <input
+                      id="form-name"
+                      type="text"
+                      name="name"
+                      class="form__input js-input js-input-name"
+                    />
+                    <label for="form-name" class="form__label form__label--top"
+                      >Name</label
+                    >
+                  </div>
+                  <div class="form__label form__label--bottom">
+                    Enter your name
+                  </div>
+                </div>
+                <div class="form__item">
+                  <div class="form__item-container">
+                    <input
+                      id="form-phone"
+                      type="text"
+                      name="phone"
+                      class="form__input js-input js-input-phone"
+                    />
+                    <label for="form-phone" class="form__label form__label--top"
+                      >Phone number</label
+                    >
+                  </div>
+                  <div class="form__label form__label--bottom">
+                    Invalid phone number. Please try again
+                  </div>
+                </div>
+                <div class="form__item">
+                  <div class="form__item-container">
+                    <input
+                      id="form-email"
+                      type="text"
+                      name="email"
+                      class="form__input js-input js-input-email"
+                    />
+                    <label for="form-email" class="form__label form__label--top"
+                      >E-mail</label
+                    >
+                  </div>
+                  <div class="form__label form__label--bottom">
+                    Invalid e-mail. Please try again
+                  </div>
+                </div>
+                <div class="form__item">
+                  <div class="form__item-container">
+                    <textarea
+                      name="message"
+                      id="form-message"
+                      cols="30"
+                      rows="10"
+                      class="form__input js-input js-input-message"
+                    ></textarea>
+                    <label
+                      for="form-message"
+                      class="form__label form__label--top"
+                      >Message</label
+                    >
+                  </div>
+                  <div class="form__label form__label--bottom">
+                    Please enter your message
+                  </div>
+                </div>
+                <!-- <div class="form__item">
+                  <div class="form__item-container">
+                    <input
+                      accept=".jpg, .png, .gif"
+                      type="file"
+                      name="image"
+                      id="form-image"
+                      class="file__input js-input js-input-image"
+                    />
+                    <label for="form-image" class="form__label form__label--top"
+                      >Photo (optional)</label
+                    >
+                    <div class="file__button">Choose file (optional)</div>
+                  </div>
+                  <div class="form__preview js-form-preview"></div>
+                </div> -->
+              </div>
+
+              <button type="submit" class="button form__button js-button">
+                Send
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section__header">
+            <h3 class="section__suptitle">We work with</h3>
+            <h2 class="section__title">Amazing services</h2>
+          </div>
+          <div class="blocks">
+            <div class="block__item block__item--border">
+              <img
+                class="block__img"
+                src="/assets/images/blocks/photography.png"
+                alt=""
+              />
+              <h4 class="block__title">Photography</h4>
+              <div class="block__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+            <div class="block__item block__item--border">
+              <img
+                class="block__img"
+                src="/assets/images/blocks/web-design.png"
+                alt=""
+              />
+              <h4 class="block__title">Web Design</h4>
+              <div class="block__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+            <div class="block__item block__item--border">
+              <img
+                class="block__img"
+                src="/assets/images/blocks/creativity.png"
+                alt=""
+              />
+              <h4 class="block__title">Creativity</h4>
+              <div class="block__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+
+            <div class="block__item">
+              <img
+                class="block__img"
+                src="/assets/images/blocks/seo.png"
+                alt=""
+              />
+              <h4 class="block__title">seo</h4>
+              <div class="block__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+            <div class="block__item">
+              <img
+                class="block__img"
+                src="/assets/images/blocks/css-html.png"
+                alt=""
+              />
+              <h4 class="block__title">css/html</h4>
+              <div class="block__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+            <div class="block__item">
+              <img
+                class="block__img"
+                src="/assets/images/blocks/digital.png"
+                alt=""
+              />
+              <h4 class="block__title">digital</h4>
+              <div class="block__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section__header">
+            <h3 class="section__suptitle">Service</h3>
+            <h2 class="section__title">What we do</h2>
+            <div class="section__text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ratione voluptatem eligendi, recusandae exercitationem facilis
+                placeat mollitia suscipit tempora aspernatur. Placeat, eveniet.
+                Vitae, recusandae, voluptatem voluptas iusto nisi, nulla vero
+                deserunt neque reprehenderit perferendis fugiat. Explicabo
+                animi, sequi sunt dolorum officia dolores velit vitae dolore
+                amet esse nulla eveniet nostrum accusamus.
+              </p>
+            </div>
+          </div>
+
+          <div class="wedo">
+            <div class="wedo__item">
+              <img
+                class="wedo__img"
+                src="/assets/images/wedo/wedo_03.jpg"
+                alt=""
+              />
+            </div>
+            <div class="wedo__item">
+              <div class="accordion">
+                <div class="accordion__item" data-collapse="#wedo_1">
+                  <div class="accordion__header">
+                    <img
+                      class="accordion__icon"
+                      src="./assets/images/blocks/creativity.png"
+                      alt=""
+                    />
+                    <h4 class="accordion__title">Photography</h4>
+                  </div>
+                  <div class="accordion__content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni voluptas voluptate hic quasi temporibus placeat,
+                      voluptatum accusamus delectus quas nisi fugit consectetur
+                      consequatur odio recusandae fuga eum quos blanditiis id
+                      molestiae. Iste quas est dicta sunt unde quod quibusdam.
+                      Officia, dignissimos? Praesentium voluptatem laboriosam
+                      quisquam necessitatibus, harum aliquam. Iure ab reiciendis
+                      quisquam quia impedit quam, repellendus debitis. Provident
+                      deserunt necessitatibus accusantium aliquid esse ut
+                      quidem? Deleniti aspernatur inventore ad quos aut
+                      molestias totam voluptas excepturi delectus autem? Aperiam
+                      commodi numquam ratione molestiae unde delectus non
+                      debitis totam recusandae officiis modi, esse quidem
+                      voluptatum dignissimos doloribus cum vero atque qui omnis.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion__item active" data-collapse="#wedo_2">
+                  <div class="accordion__header">
+                    <img
+                      class="accordion__icon"
+                      src="./assets/images/blocks/creativity.png"
+                      alt=""
+                    />
+                    <h4 class="accordion__title">Photography</h4>
+                  </div>
+                  <div class="accordion__content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni voluptas voluptate hic quasi temporibus placeat,
+                      voluptatum accusamus delectus quas nisi fugit consectetur
+                      consequatur odio recusandae fuga eum quos blanditiis id
+                      molestiae. Iste quas est dicta sunt unde quod quibusdam.
+                      Officia, dignissimos? Praesentium voluptatem laboriosam
+                      quisquam necessitatibus, harum aliquam. Iure ab reiciendis
+                      quisquam quia impedit quam, repellendus debitis. Provident
+                      deserunt necessitatibus accusantium aliquid esse ut
+                      quidem? Deleniti aspernatur inventore ad quos aut
+                      molestias totam voluptas excepturi delectus autem? Aperiam
+                      commodi numquam ratione molestiae unde delectus non
+                      debitis totam recusandae officiis modi, esse quidem
+                      voluptatum dignissimos doloribus cum vero atque qui omnis.
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion__item" data-collapse="#wedo_3">
+                  <div class="accordion__header">
+                    <img
+                      class="accordion__icon"
+                      src="./assets/images/blocks/creativity.png"
+                      alt=""
+                    />
+                    <h4 class="accordion__title">Photography</h4>
+                  </div>
+                  <div class="accordion__content">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Magni voluptas voluptate hic quasi temporibus placeat,
+                      voluptatum accusamus delectus quas nisi fugit consectetur
+                      consequatur odio recusandae fuga eum quos blanditiis id
+                      molestiae. Iste quas est dicta sunt unde quod quibusdam.
+                      Officia, dignissimos? Praesentium voluptatem laboriosam
+                      quisquam necessitatibus, harum aliquam. Iure ab reiciendis
+                      quisquam quia impedit quam, repellendus debitis. Provident
+                      deserunt necessitatibus accusantium aliquid esse ut
+                      quidem? Deleniti aspernatur inventore ad quos aut
+                      molestias totam voluptas excepturi delectus autem? Aperiam
+                      commodi numquam ratione molestiae unde delectus non
+                      debitis totam recusandae officiis modi, esse quidem
+                      voluptatum dignissimos doloribus cum vero atque qui omnis.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section section--review">
+        <div class="reviews">
+          <div data-slider>
+            <div>
+              <img
+                class="reviews__icon"
+                src="/assets/images/car1.jpeg"
+                alt=""
+              />
+            </div>
+            <div>
+              <img
+                class="reviews__icon"
+                src="/assets/images/car2.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section" id="works">
+        <div class="container">
+          <div class="section__header">
+            <h3 class="section__suptitle">What we do</h3>
+            <h2 class="section__title">Story card us</h2>
+            <div class="section__text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Ratione voluptatem eligendi, recusandae exercitationem facilis
+                placeat mollitia suscipit tempora aspernatur. Placeat, eveniet.
+                Vitae, recusandae, voluptatem voluptas iusto nisi, nulla vero
+                deserunt neque reprehenderit perferendis fugiat. Explicabo
+                animi, sequi sunt dolorum officia dolores velit vitae dolore
+                amet esse nulla eveniet nostrum accusamus.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="works">
+          <div class="works__col">
+            <div class="works__item">
+              <img
+                class="works__image"
+                src="/assets/images/works/1.jpg"
+                alt=""
+              />
+              <div class="works__info">
+                <div class="works__title">creatively designed</div>
+                <div class="works__text">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+            <div class="works__item">
+              <img
+                class="works__image"
+                src="/assets/images/works/2.jpg"
+                alt=""
+              />
+              <div class="works__info">
+                <div class="works__title">creatively designed</div>
+                <div class="works__text">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+          </div>
+          <div class="works__col">
+            <div class="works__item">
+              <img
+                class="works__image"
+                src="/assets/images/works/3.jpg"
+                alt=""
+              />
+              <div class="works__info">
+                <div class="works__title">creatively designed</div>
+                <div class="works__text">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+            <div class="works__item">
+              <img
+                class="works__image"
+                src="/assets/images/works/4.jpg"
+                alt=""
+              />
+              <div class="works__info">
+                <div class="works__title">creatively designed</div>
+                <div class="works__text">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+          </div>
+          <div class="works__col">
+            <div class="works__item">
+              <img
+                class="works__image"
+                src="/assets/images/works/5.jpg"
+                alt=""
+              />
+              <div class="works__info">
+                <div class="works__title">creatively designed</div>
+                <div class="works__text">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+          </div>
+          <div class="works__col">
+            <div class="works__item">
+              <img
+                class="works__image"
+                src="/assets/images/works/6.jpg"
+                alt=""
+              />
+              <div class="works__info">
+                <div class="works__title">creatively designed</div>
+                <div class="works__text">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+            <div class="works__item">
+              <img
+                class="works__image"
+                src="/assets/images/works/7.jpg"
+                alt=""
+              />
+              <div class="works__info">
+                <div class="works__title">creatively designed</div>
+                <div class="works__text">Lorem ipsum dolor sit amet</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section">
+        <div class="container">
+          <div class="reviews">
+            <div data-slider>
+              <div>
+                <div class="reviews__item">
+                  <img
+                    class="reviews__icon reviews__author--girl"
+                    src="/assets/images/review/girl.jpg"
+                    alt=""
+                    class="review__icon"
+                  />
+                  <div class="reviews__text">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio officia incidunt molestiae a odio dolor, iusto laborum
+                    pariatur illum aperiam."
+                  </div>
+                  <div class="reviews__author">John Doe</div>
+                </div>
+              </div>
+              <div>
+                <div class="reviews__item">
+                  <img
+                    class="reviews__icon reviews__author--girl"
+                    src="/assets/images/review/girl.jpg"
+                    alt=""
+                    class="review__icon"
+                  />
+                  <div class="reviews__text">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Optio officia incidunt molestiae a odio dolor, iusto laborum
+                    pariatur illum aperiam."
+                  </div>
+                  <div class="reviews__author">John Doe</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="copyright">
+            © 2016 MoGo free PSD template by <span>Laaqiq</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/js/app.js"></script>
+  </body>
+
+  <script src="/script.js"></script>
+</html>
